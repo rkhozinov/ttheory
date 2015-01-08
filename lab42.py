@@ -17,14 +17,14 @@ anx = 1.25
 
 
 def main(n1, n2):
-    # n1 - individual hardware per objectyki
+    # n1 - individual hardware per object
     # n2 - objects
     pki = sum((tco, tc * n, tcz, tpb, Tki))
     cpnx = sum((tco, tc * n, tcz, tpb, Tnx))
-    yki = (aki * n1 * Praz * pki) / 3600
-    ynx = (anx * n2 * Praz * cpnx) / 3600
+    yki = (aki * n1 * Praz * pki * Cki) / 3600
+    ynx = (anx * n2 * Praz * cpnx * Cnx) / 3600
 
-    print "n1: {} n2: {}", format(n1, n2)
+    print "n1: {} n2: {}".format(n1, n2)
     print "Pki: {} sec".format(pki)
     print "Cpnx: {} sec".format(cpnx)
     print "Yki: {} Erl".format(yki)
@@ -33,4 +33,6 @@ def main(n1, n2):
 
 
 if __name__ == "__main__":
-    main(n1=870, n2=120)
+    # main(n1=870, n2=120)
+    # main(n1=900, n2=100)
+    main(n1=300, n2=700)
