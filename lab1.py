@@ -58,7 +58,7 @@ def lab1(args):
 
     average_free_time_of_stream = stream_denied_of_service * order_process_time
     print ("8. average free time of the stream: {}".format(average_free_time_of_stream))
-stream_rel_bandwitdh
+
     average_of_processed_orders = common_loading * stream_rel_bandwitdh
     print ("9. average of processed orders: {}".format(average_of_processed_orders))
 
