@@ -19,10 +19,10 @@ def main(desired_orders):
 
     A = p_srv * load
 
-    print ("p0: {:.2f}%\n"
-           "errors: {:.2f}%\n"
-           "serviced: {:.2f}%\n"
-           "absolute bandwidth: {:.3f} orders per hour".format(p_0 * 100, p_err * 100, p_srv * 100, A))
+    print ("p0: {:.2%}\n"
+           "errors: {:.2%}\n"
+           "serviced: {:.2%}\n"
+           "absolute bandwidth: {:.3f} orders per hour".format(p_0 , p_err, p_srv, A))
 
 if __name__ == "__main__":
     main(desired_orders=90)
